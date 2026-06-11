@@ -131,7 +131,7 @@ body {
   font-size: 0.82rem;
   font-weight: 500;
   cursor: grab;
-  user-select: none;
+  /* user-select: none; */
   white-space: nowrap;
   transition: border-color 0.2s ease, background 0.2s ease;
 }
@@ -201,3 +201,8 @@ body {
 .dark .contrib-level[data-level="2"] { background: #006d32; }
 .dark .contrib-level[data-level="3"] { background: #26a641; }
 .dark .contrib-level[data-level="4"] { background: #39d353; }
+
+
+.pad {
+  @apply py-9 px-4
+}
