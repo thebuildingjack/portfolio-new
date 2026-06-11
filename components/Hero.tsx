@@ -59,25 +59,25 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="relative flex-shrink-0"
+            className="relative shrink-0 flex gap-3"
           >
             <div
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden relative"
               style={{ border: '1px solid hsl(var(--border))' }}
             >
               {/* Placeholder avatar */}
-              <div
+              {/* <div
                 className="w-full h-full flex items-center justify-center text-3xl font-bold"
                 style={{ background: 'hsl(var(--tag-bg))', color: 'hsl(var(--muted))' }}
               >
                 F
-              </div>
-              {/* Replace the div above with this once you have a photo:
-              <Image src="/avatar.jpg" alt="Francis" fill className="object-cover" /> */}
+              </div> */}
+              {/* Replace the div above with this once you have a photo: */}
+              <Image loading='eager' width={112} height={112} src="/thebuildingjackpfp.png" alt="Francis" className="object-cover" />
             </div>
             {/* Small badge bottom-right */}
             <div
-              className="absolute -bottom-1 -right-1 w-6 h-6 rounded-md flex items-center justify-center text-xs"
+              className="absolute bottom-[0.5px] left-22 w-6 h-6 rounded-md flex items-center justify-center text-xs"
               style={{
                 background: 'hsl(var(--tag-bg))',
                 border: '1px solid hsl(var(--border))',
@@ -85,10 +85,7 @@ export default function Hero() {
             >
               ⚡
             </div>
-          </motion.div>
-
-          {/* Info */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -145,6 +142,10 @@ export default function Hero() {
               </span>
             </div>
           </motion.div>
+        </motion.div>
+
+          {/* Info */}
+          
         </motion.div>
 
         {/* Bio */}
