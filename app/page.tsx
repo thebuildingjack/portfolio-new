@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main className="flex items-center justify-center relative min-h-screen">
       {/* Background stars */}
       <StarBackground />
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
 
       {/* Sections */}
-      <div className="relative z-10">
+      <div className="flex flex-col relative z-10 gap-10">
         <Hero />
         <Tools />
         <WorkExperience />
