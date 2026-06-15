@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
 
       {/* Sections */}
-      <div className="w-full flex flex-col relative z-10 gap-10 pad">
+      <div className="flex flex-col items-center justify-center  w-full my-10 relative z-10 pad">
         <Hero />
         <Tools />
         <WorkExperience />
