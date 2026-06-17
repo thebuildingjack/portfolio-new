@@ -51,8 +51,8 @@ const statusColors: Record<string, { bg: string; dot: string; text: string }> = 
 
 export default function WorkExperience() {
   return (
-    <section id="experience" className="relative z-10 py-10 px-4">
-      <div className="max-w-3xl mx-auto">
+    <section id="experience" className="w-full relative z-10 py-10 flex flex-col items-center justify-center">
+      <div className=" w-full mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

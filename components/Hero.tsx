@@ -45,9 +45,9 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative z-10 pt-20 pb-8 px-4"
+      className="w-full relative z-10 pt-20 pb-8 flex flex-col items-center justify-center"
     >
-      <div className="max-w-3xl mx-auto">
+      <div className=" w-full mx-auto flex flex-col items-start justify-center gap-3">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
