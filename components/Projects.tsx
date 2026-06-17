@@ -49,7 +49,7 @@ const projects: Project[] = [
     badgeColor: '#d97706',
   },
   {
-    title: 'KreaTON – Launch NFTs, No Code',
+    title: 'KreaTON',
     description:
       'A no-code NFT launch platform that allows creators to create and deploy NFT collections on the Ton blockchain without blockchain development knowledge.',
     liveUrl: 'https://kreaton.vercel.app/',
