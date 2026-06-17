@@ -60,7 +60,7 @@ export default function GitHubGraph() {
           transition={{ duration: 0.5 }}
           className="dashed-card p-5"
         >
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto scrollbar-none">
             <div style={{ minWidth: `${WEEKS * 13}px` }}>
               {/* Month row */}
               <div className="flex mb-1.5">
