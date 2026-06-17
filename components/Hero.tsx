@@ -201,7 +201,7 @@ export default function Hero() {
             Github
           </a>
           <a
-            href="[your-resume-link]" /* PLACEHOLDER */
+            href="https://docs.google.com/document/d/1QO8Oh6aEYbr9pxiNrAqIisSzv1pdLUoTR4erwdEaiR4/edit?usp=drivesdk" /* PLACEHOLDER */
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn"

@@ -6,11 +6,11 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { Mail, FileText } from 'lucide-react'
 
 const socials = [
-  { icon: SiX, label: 'Twitter / X', href: 'https://x.com/[your-handle]' },
+  { icon: SiX, label: 'Twitter / X', href: 'https://x.com/thebuildingjack' },
   { icon: SiGithub, label: 'GitHub', href: 'https://github.com/thebuildingjack' },
   { icon: FileText, label: 'Resume', href: '#' },
-  { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://linkedin.com/in/[your-linkedin]' },
-  { icon: Mail, label: 'Email', href: 'mailto:[your-email]' },
+  { icon: FaLinkedinIn, label: 'LinkedIn', href: 'https://docs.google.com/document/d/1QO8Oh6aEYbr9pxiNrAqIisSzv1pdLUoTR4erwdEaiR4/edit?usp=drivesdk' },
+  { icon: Mail, label: 'Email', href: 'mailto:francis.i.authority@gmail.com' },
 ]
 
 export default function Connect() {
