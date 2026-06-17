@@ -38,7 +38,7 @@ const experiences: Experience[] = [
     bullets: [
       'Built full-stack Web2 SaaS and Web3 products for clients on Upwork.',
       'Shipped ChainPulse AI — a Solana on-chain AI agent for the Buildifi hackathon.',
-      'Built DocuAI — an AI-powered PDF analyzer with Claude-backed summaries and Q&A.',
+      'Building DocuAI — an AI-powered PDF analyzer with Claude-backed summaries and Q&A.',
     ],
   },
 ]
