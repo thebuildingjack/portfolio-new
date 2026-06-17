@@ -67,7 +67,7 @@ const projects: Project[] = [
   tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
   badge: 'Fullstack',
   badgeColor: '#2563eb',
-},
+}/* ,
   {
     title: 'Your Next Project',
     description:
@@ -77,7 +77,7 @@ const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Add', 'Your', 'Stack'],
     badge: 'WIP',
     badgeColor: '#059669',
-  },
+  }, */
 ]
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
