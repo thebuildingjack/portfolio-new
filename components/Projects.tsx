@@ -58,7 +58,16 @@ const projects: Project[] = [
     badge: 'Client',
     badgeColor: '#d97706',
   },
-  // PLACEHOLDER — add more projects here
+  {
+  title: 'Bazar',
+  description:
+    'Full-stack e-commerce marketplace built as a university group project, leading a team of 6 at Bowen University. Modeled after platforms like Jumia, with multi-vendor listings, product catalogs, and order management — backed by a complete academic documentation suite.',
+  liveUrl: 'https://thestore-front.vercel.app',     // PLACEHOLDER
+  githubUrl: 'https://github.com/thebuildingjack/store-front',   // PLACEHOLDER
+  tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
+  badge: 'Fullstack',
+  badgeColor: '#2563eb',
+},
   {
     title: 'Your Next Project',
     description:
