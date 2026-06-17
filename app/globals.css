@@ -107,6 +107,7 @@ body {
   border-radius: 4px;
   background: hsl(var(--card) / 0.5);
   transition: border-color 0.2s ease;
+  padding: .5rem;
 }
 .dashed-card:hover { border-color: hsl(var(--muted)); }
 
@@ -124,6 +125,23 @@ body {
   vertical-align: middle;
 }
 
+/* .tool-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  background: hsl(var(--tag-bg));
+  border: 1px solid hsl(var(--tag-border));
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: grab;
+  user-select: none; 
+  white-space: nowrap;
+  transition: border-color 0.2s ease, background 0.2s ease;
+} */
+
+
 .tool-pill {
   display: inline-flex;
   align-items: center;
@@ -135,9 +153,23 @@ body {
   font-size: 0.82rem;
   font-weight: 500;
   cursor: grab;
-  /* user-select: none; */
+  -webkit-user-select: none;
+  user-select: none;
   white-space: nowrap;
   transition: border-color 0.2s ease, background 0.2s ease;
+  /* ✅ NEW — stops the browser's native drag-and-drop from
+     hijacking the gesture and snapping back on release */
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  touch-action: none;
+}
+
+
+/* ✅ NEW — the icon/text inside shouldn't be independently
+   draggable or eat pointer events meant for the pill itself */
+.tool-pill * {
+  -webkit-user-drag: none;
+  pointer-events: none;
 }
 .tool-pill:hover  { border-color: hsl(var(--muted)); }
 .tool-pill:active { cursor: grabbing; }

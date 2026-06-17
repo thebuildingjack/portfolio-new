@@ -174,7 +174,7 @@ export default function Hero() {
           className="flex flex-wrap items-center gap-2 mt-6"
         >
           <a
-            href="https://x.com/[your-handle]" /* PLACEHOLDER */
+            href="https://x.com/thebuildingjack"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn"
@@ -184,7 +184,7 @@ export default function Hero() {
           </a>
           <span className="text-xs" style={{ color: 'hsl(var(--muted))' }}>OR</span>
           <a
-            href="mailto:[your-email]" /* PLACEHOLDER */
+            href="mailto:francis.i.authority@gmail.com"
             className="social-btn"
           >
             <Mail size={13} />
@@ -198,6 +198,7 @@ export default function Hero() {
             className="social-btn"
           >
             <SiGithub size={13} />
+            Github
           </a>
           <a
             href="[your-resume-link]" /* PLACEHOLDER */

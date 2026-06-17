@@ -7,7 +7,7 @@ import {
   SiJavascript, SiNodedotjs, SiExpress, SiMongodb,
   SiSupabase, SiPrisma, SiDocker, SiGit, SiGithub,
   SiPostgresql, SiFirebase, SiFigma, SiVercel, SiSolana,
-  SiFramer, SiThreedotjs,
+  SiFramer, SiThreedotjs, SiTon
 } from 'react-icons/si'
 import { TbBrandVscode } from 'react-icons/tb'
 
@@ -26,14 +26,19 @@ const tools = [
   { name: 'Docker', Icon: SiDocker, color: '#2496ED' },
   { name: 'Git', Icon: SiGit, color: '#F05032' },
   { name: 'GitHub', Icon: SiGithub, color: '#ffffff' },
-  { name: 'Firebase', Icon: SiFirebase, color: '#FFCA28' },
+  /* { name: 'Firebase', Icon: SiFirebase, color: '#FFCA28' }, */
   { name: 'Figma', Icon: SiFigma, color: '#F24E1E' },
   { name: 'Vercel', Icon: SiVercel, color: '#ffffff' },
   { name: 'Solana', Icon: SiSolana, color: '#9945FF' },
+  { name: 'Ton', Icon: SiTon, color: '#0055FF' },
   { name: 'Framer Motion', Icon: SiFramer, color: '#0055FF' },
-  { name: 'Three.js', Icon: SiThreedotjs, color: '#ffffff' },
+  /* { name: 'Three.js', Icon: SiThreedotjs, color: '#ffffff' }, */
   { name: 'VS Code', Icon: TbBrandVscode, color: '#007ACC' },
 ]
+
+const ENTRANCE_INITIAL = { opacity: 0, scale: 0.88 }
+const ENTRANCE_VISIBLE = { opacity: 1, scale: 1 }
+const DRAG_SCALE = { scale: 1.08, zIndex: 50, cursor: 'grabbing' as const }
 
 function DraggablePill({ name, Icon, color, delay }: {
   name: string
@@ -46,13 +51,21 @@ function DraggablePill({ name, Icon, color, delay }: {
       drag
       dragElastic={0.08}
       dragMomentum={false}
-      whileDrag={{ scale: 1.08, zIndex: 50, cursor: 'grabbing' }}
-      initial={{ opacity: 0, scale: 0.88, y: 10 }}
-      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      dragSnapToOrigin={false}
+      whileDrag={DRAG_SCALE}
+      initial={ENTRANCE_INITIAL}
+      whileInView={ENTRANCE_VISIBLE}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.4, delay, ease: 'easeOut' }}
       className="tool-pill select-none"
       style={{ position: 'relative', zIndex: 1 }}
+      // ✅ NEW — kills the browser's native HTML5 drag-and-drop
+      // before it can hijack the gesture from Framer Motion.
+      // This is the actual fix: native drag has its own "snap
+      // back to origin if no valid drop target" behavior that
+      // runs completely outside Framer Motion's control.
+      draggable={false}
+      onDragStart={(e) => e.preventDefault()}
     >
       <Icon size={15} color={color} />
       <span className="text-xs">{name}</span>
@@ -73,10 +86,8 @@ export default function Tools() {
           transition={{ duration: 0.5 }}
           className="relative mb-8"
         >
-          {/* Display title - Instrument Serif like utsavworks */}
           <h2 className="display-title">Tools that I&apos;ve used</h2>
 
-          {/* drag me hint */}
           <div
             className="absolute top-0 right-0 flex flex-col items-end gap-0.5 pointer-events-none"
             style={{ color: 'hsl(var(--muted))' }}
@@ -95,7 +106,6 @@ export default function Tools() {
           </div>
         </motion.div>
 
-        {/* Pills container */}
         <div
           ref={containerRef}
           className="flex flex-wrap gap-2.5"
