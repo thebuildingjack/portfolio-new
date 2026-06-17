@@ -17,14 +17,14 @@ interface Experience {
 // PLACEHOLDER — replace with your actual experience
 const experiences: Experience[] = [
   {
-    company: 'Your Company Name',
-    companyUrl: 'https://example.com',
+    company: 'Ophir Institute',
+    companyUrl: 'https://x.com/instituteophir',
     role: 'Frontend Engineer / Intern',
-    period: 'Month YYYY – Month YYYY',
+    period: 'March 2023 – August 2023',
     location: 'Remote',
     status: 'Completed',
     bullets: [
-      'Built [describe what you built] using React and TypeScript.',
+      'Built BlockPay using Next.js and Javascript.',
       'Collaborated with [team/clients] to deliver [outcome].',
       'Improved [metric] by [percentage or description].',
     ],
