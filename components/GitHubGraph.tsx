@@ -51,7 +51,7 @@ export default function GitHubGraph() {
   }, [grid])
 
   return (
-    <section className="relative z-10 py-6 px-4">
+    <section className="w-full relative z-10 py-6 px-4">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
