@@ -20,7 +20,7 @@ const experiences: Experience[] = [
     company: 'Ophir Institute',
     companyUrl: 'https://x.com/instituteophir',
     role: 'Frontend Engineer / Intern',
-    period: 'March 2023 – August 2023',
+    period: 'Mar 2023 – Aug 2023',
     location: 'Remote',
     status: 'Completed',
     bullets: [
@@ -58,7 +58,7 @@ export default function WorkExperience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.5 }}
-          className="mb-7"
+          className="mb-7 flex justify-start"
         >
           <span className="bracket-heading text-sm">Work Experience</span>
         </motion.div>
@@ -77,80 +77,82 @@ export default function WorkExperience() {
               >
                 <div className="flex items-start justify-between gap-4 flex-wrap">
                   {/* Left */}
-                  <div className="flex items-start gap-3">
-                    {/* Company icon */}
-                    <div
-                      className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                      style={{
-                        background: 'hsl(var(--tag-bg))',
-                        border: '1px solid hsl(var(--border))',
-                      }}
-                    >
-                      <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
+                  <div className="flex justify-between w-full">
+                    <div className="flex items-start justify-between gap-3">
+                      {/* Company icon */}
+                      <div
+                        className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
+                        style={{
+                          background: 'hsl(var(--tag-bg))',
+                          border: '1px solid hsl(var(--border))',
+                        }}
+                      >
+                        <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
+                      </div>
+
+                      <div>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-semibold text-sm">
+                            {exp.companyUrl ? (
+                              <a
+                                href={exp.companyUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:underline underline-offset-4 inline-flex items-center gap-1"
+                                style={{ color: 'hsl(var(--foreground))' }}
+                              >
+                                {exp.company}
+                                <ExternalLink size={11} style={{ color: 'hsl(var(--muted))' }} />
+                              </a>
+                            ) : (
+                              exp.company
+                            )}
+                          </span>
+                          <span
+                            className="flex items-center gap-1.5 text-xs px-2 py-0.5 rounded-full"
+                            style={{
+                              background: sc.bg,
+                              color: sc.text,
+                              border: `1px solid ${sc.dot}40`,
+                            }}
+                          >
+                            <span className="w-1.5 h-1.5 rounded-full" style={{ background: sc.dot }} />
+                            {exp.status}
+                          </span>
+                        </div>
+                        <p className="text-xs mt-0.5" style={{ color: 'hsl(var(--muted))' }}>
+                          {exp.role}
+                        </p>
+                      </div>
                     </div>
 
-                    <div>
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold text-sm">
-                          {exp.companyUrl ? (
-                            <a
-                              href={exp.companyUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:underline underline-offset-4 inline-flex items-center gap-1"
-                              style={{ color: 'hsl(var(--foreground))' }}
-                            >
-                              {exp.company}
-                              <ExternalLink size={11} style={{ color: 'hsl(var(--muted))' }} />
-                            </a>
-                          ) : (
-                            exp.company
-                          )}
-                        </span>
-                        <span
-                          className="flex items-center gap-1.5 text-xs px-2 py-0.5 rounded-full"
-                          style={{
-                            background: sc.bg,
-                            color: sc.text,
-                            border: `1px solid ${sc.dot}40`,
-                          }}
-                        >
-                          <span className="w-1.5 h-1.5 rounded-full" style={{ background: sc.dot }} />
-                          {exp.status}
-                        </span>
-                      </div>
-                      <p className="text-xs mt-0.5" style={{ color: 'hsl(var(--muted))' }}>
-                        {exp.role}
+                    {/* Right — period + location */}
+                    <div className="text-right shrink-0">
+                      <p className="text-xs font-medium" style={{ color: 'hsl(var(--foreground))' }}>
+                        {exp.period}
+                      </p>
+                      <p className="text-xs flex items-center justify-end gap-1 mt-0.5" style={{ color: 'hsl(var(--muted))' }}>
+                        <MapPin size={10} />
+                        {exp.location}
                       </p>
                     </div>
                   </div>
 
-                  {/* Right — period + location */}
-                  <div className="text-right flex-shrink-0">
-                    <p className="text-xs font-medium" style={{ color: 'hsl(var(--foreground))' }}>
-                      {exp.period}
-                    </p>
-                    <p className="text-xs flex items-center justify-end gap-1 mt-0.5" style={{ color: 'hsl(var(--muted))' }}>
-                      <MapPin size={10} />
-                      {exp.location}
-                    </p>
-                  </div>
+                  {exp.bullets.length > 0 && (
+                    <ul className="flex flex-col gap-1 pl-1">
+                      {exp.bullets.map((b, j) => (
+                        <li
+                          key={j}
+                          className="text-xs flex items-center gap-2"
+                          style={{ color: 'hsl(var(--foreground) / 0.8)' }}
+                        >
+                          <span className="mt-1.5 w-1 h-1 rounded-full shrink-0" style={{ background: 'hsl(var(--muted))' }} />
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
-
-                {exp.bullets.length > 0 && (
-                  <ul className="mt-4 flex flex-col gap-1.5 pl-1">
-                    {exp.bullets.map((b, j) => (
-                      <li
-                        key={j}
-                        className="text-xs flex items-start gap-2"
-                        style={{ color: 'hsl(var(--foreground) / 0.8)' }}
-                      >
-                        <span className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0" style={{ background: 'hsl(var(--muted))' }} />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </motion.div>
             )
           })}

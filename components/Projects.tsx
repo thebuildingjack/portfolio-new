@@ -37,7 +37,7 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
     badge: 'Web3',
     badgeColor: '#9945FF',
-  },
+  },/* 
   {
     title: 'MVTINY – Polo Club',
     description:
@@ -47,7 +47,7 @@ const projects: Project[] = [
     tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
     badge: 'Client',
     badgeColor: '#d97706',
-  },
+  }, */
   {
     title: 'KreaTON',
     description:
@@ -92,7 +92,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       <div className="flex flex-col sm:flex-row gap-0">
         {/* Screenshot / preview */}
         <div
-          className="relative sm:w-56 flex-shrink-0 overflow-hidden"
+          className="relative sm:w-56 shrink-0 overflow-hidden"
           style={{
             background: 'hsl(var(--tag-bg))',
             borderRight: '1px dashed hsl(var(--card-border))',
