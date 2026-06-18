@@ -89,7 +89,7 @@ body {
 ::selection { background: hsl(var(--accent) / 0.3); color: hsl(var(--foreground)); }
 
 /* ── Reusable component classes ────────────────────────── */
-.bracket-heading {
+/* .bracket-heading {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -98,10 +98,16 @@ body {
   font-weight: 500;
   color: hsl(var(--muted));
   letter-spacing: 0.02em;
-  background: rgb(37, 36, 36);
-}
+  background: #252424;
+} */
 .bracket-heading::before { content: '['; color: hsl(var(--muted)); }
 .bracket-heading::after  { content: ']'; color: hsl(var(--muted)); }
+
+@layer utilities {
+  .bracket-heading {
+    @apply inline-flex items-center gap-2 font-mono text-sm font-medium tracking-wide text-muted  px-2 py-1 rounded-md bg-[#252424] dark:bg-[#e7e5e5];
+  }
+}
 
 .dashed-card {
   border: 1px dashed hsl(var(--card-border));
@@ -125,23 +131,6 @@ body {
   line-height: 1.6;
   vertical-align: middle;
 }
-
-/* .tool-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 6px 14px;
-  border-radius: 9999px;
-  background: hsl(var(--tag-bg));
-  border: 1px solid hsl(var(--tag-border));
-  font-size: 0.82rem;
-  font-weight: 500;
-  cursor: grab;
-  user-select: none; 
-  white-space: nowrap;
-  transition: border-color 0.2s ease, background 0.2s ease;
-} */
-
 
 .tool-pill {
   display: inline-flex;
