@@ -10,8 +10,8 @@ const navItems = [
   { icon: Home,         label: 'Home',        href: '#hero',                                    external: false },
   { icon: FolderOpen,   label: 'Projects',    href: '#projects',                                external: false },
   { icon: Briefcase,    label: 'Experience',  href: '#experience',                              external: false },
-  { icon: SiGithub,     label: 'GitHub',      href: 'https://github.com/thebuildingjack',       external: true  },
-  { icon: FaLinkedinIn, label: 'LinkedIn',    href: 'https://linkedin.com/in/thebuildingjack',  external: true  },
+  { icon: SiGithub,     label: 'GitHub',      href: 'https://github.com/thebuildingjack',       external: true  },/* 
+  { icon: FaLinkedinIn, label: 'LinkedIn',    href: 'https://linkedin.com/in/thebuildingjack',  external: true  }, */
   { icon: SiX,          label: 'Twitter / X', href: 'https://x.com/thebuildingjack',             external: true  },
   { icon: Mail,         label: 'Email',       href: 'mailto:francis.i.authority@gmail.com',                      external: false },
 ]

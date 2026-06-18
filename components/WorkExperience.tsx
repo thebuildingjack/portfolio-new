@@ -17,7 +17,7 @@ interface Experience {
 // PLACEHOLDER — replace with your actual experience
 const experiences: Experience[] = [
   {
-    company: 'Ophir Institute',
+    company: 'Ophir',
     companyUrl: 'https://x.com/instituteophir',
     role: 'Frontend Engineer',
     period: 'Mar 2023 – Aug 2023',
@@ -32,9 +32,9 @@ const experiences: Experience[] = [
   {
     company: 'Freelance',
     role: 'Frontend Engineer',
-    period: '2023 – Present',
+    period: 'Aug 2023 – Present',
     location: 'Lagos, NG (Remote)',
-    status: 'Ongoing',
+    status: 'Current',
     bullets: [
       'Built full-stack Web2 SaaS and Web3 products for clients on Upwork.',
       'Shipped ChainPulse AI — a Solana on-chain AI agent for the Buildifi hackathon.',
