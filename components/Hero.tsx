@@ -76,7 +76,7 @@ export default function Hero() {
               <Image loading='eager' width={112} height={112} src="/thebuildingjackpfp.png" alt="Francis" className="object-cover" />
             </div>
             {/* Small badge bottom-right */}
-            <div
+            {/* <div
               className="absolute bottom-[0.5px] left-22 w-6 h-6 rounded-md flex items-center justify-center text-xs"
               style={{
                 background: 'hsl(var(--tag-bg))',
@@ -84,7 +84,7 @@ export default function Hero() {
               }}
             >
               ⚡
-            </div>
+            </div> */}
             <motion.div
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
@@ -92,7 +92,7 @@ export default function Hero() {
             className="flex flex-col gap-1.5"
           >
             <div className="flex flex-wrap items-center gap-3">
-              <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight" style={{ letterSpacing: '-0.02em' }}>
+              <h1 className="text-xl sm:text-3xl font-semibold tracking-tight" style={{ letterSpacing: '-0.02em' }}>
                 Francis {/* PLACEHOLDER: replace with your full name */}
               </h1>
               {/* Available for work badge */}
