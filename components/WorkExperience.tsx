@@ -33,7 +33,7 @@ const experiences: Experience[] = [
     company: 'Freelance',
     role: 'Frontend Engineer',
     period: '2023 – Present',
-    location: 'Lagos, Nigeria (Remote)',
+    location: 'Lagos, NG (Remote)',
     status: 'Ongoing',
     bullets: [
       'Built full-stack Web2 SaaS and Web3 products for clients on Upwork.',
