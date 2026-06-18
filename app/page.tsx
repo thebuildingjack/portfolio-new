@@ -16,7 +16,7 @@ export default function Home() {
       <StarBackground />
 
       {/* Navbar */}
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* Sections */}
       <div className="flex flex-col items-center justify-center gap-10 w-full relative z-10 pad max-w-3xl">

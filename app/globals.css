@@ -98,6 +98,7 @@ body {
   font-weight: 500;
   color: hsl(var(--muted));
   letter-spacing: 0.02em;
+  background: rgb(37, 36, 36);
 }
 .bracket-heading::before { content: '['; color: hsl(var(--muted)); }
 .bracket-heading::after  { content: ']'; color: hsl(var(--muted)); }

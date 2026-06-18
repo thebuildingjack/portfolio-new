@@ -10,7 +10,8 @@ function useViewCount() {
   useEffect(() => {
     // PLACEHOLDER: integrate real analytics here
     // For now, just shows a static number
-    setViews(42) // replace with actual API call
+    const views = (setInterval(() => setViews(42), 500)) // replace with actual API call
+    return () => clearInterval(views)
   }, [])
 
   return views
@@ -21,7 +22,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="relative z-10 pb-24 px-4 pt-6">
+    <footer className="relative z-10 pb-24 px-4 pt-6 mb-40">
       <div className="max-w-3xl mx-auto">
         {/* Divider */}
         <div
