@@ -19,7 +19,7 @@ const experiences: Experience[] = [
   {
     company: 'Ophir Institute',
     companyUrl: 'https://x.com/instituteophir',
-    role: 'Frontend Engineer / Intern',
+    role: 'Frontend Engineer',
     period: 'Mar 2023 – Aug 2023',
     location: 'Remote',
     status: 'Completed',
