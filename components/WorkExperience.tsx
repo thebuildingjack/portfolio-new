@@ -92,7 +92,7 @@ export default function WorkExperience() {
 
                       <div>
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-semibold text-sm">
+                          <span className="font-semibold text-xs" style={{ color: 'hsl(var(--foreground))' }}>
                             {exp.companyUrl ? (
                               <a
                                 href={exp.companyUrl}
