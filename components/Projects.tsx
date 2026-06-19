@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
 import { SiGithub } from 'react-icons/si'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 interface Project {
   title: string
@@ -53,6 +54,7 @@ const projects: Project[] = [
     description:
       'A no-code NFT launch platform that allows creators to create and deploy NFT collections on the Ton blockchain without blockchain development knowledge.',
     liveUrl: 'https://kreaton.vercel.app/',
+    image: '/kreaTON.jpg',
     githubUrl: 'https://github.com/thebuildingjack/kreaTON',
     tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     badge: 'Client',
@@ -80,7 +82,7 @@ const projects: Project[] = [
   }, */
 ]
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
+function ProjectCard({ title, description, image, liveUrl, githubUrl, tags, badge, badgeColor, index }: Project & { index: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -99,11 +101,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             minHeight: '140px',
           }}
         >
-          {project.image ? (
+          {image ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={project.image}
-              alt={project.title}
+            <Image
+              src={image}
+              alt={title}
+              width={600}
+              height={300}
               className="w-full h-full object-cover"
             />
           ) : (
@@ -118,18 +122,18 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </div>
           )}
           {/* Badge top-left */}
-          {project.badge && (
+          {badge && (
             <span
               className="absolute top-2 left-2 text-xs px-2 py-0.5 rounded font-semibold"
               style={{
-                background: `${project.badgeColor}22`,
-                color: project.badgeColor,
-                border: `1px solid ${project.badgeColor}44`,
+                background: `${badgeColor}22`,
+                color: badgeColor,
+                border: `1px solid ${badgeColor}44`,
                 fontFamily: 'DM Mono, monospace',
                 fontSize: '0.65rem',
               }}
             >
-              {project.badge}
+              {badge}
             </span>
           )}
         </div>
@@ -137,11 +141,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {/* Content */}
         <div className="p-5 flex flex-col gap-3 flex-1">
           <div className="flex items-start justify-between gap-3 flex-wrap">
-            <h3 className="font-semibold text-sm">{project.title}</h3>
+            <h3 className="font-semibold text-sm">{title}</h3>
             <div className="flex items-center gap-2">
-              {project.liveUrl && project.liveUrl !== '#' && (
+              {liveUrl && liveUrl !== '#' && (
                 <a
-                  href={project.liveUrl}
+                  href={liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-btn text-xs"
@@ -150,9 +154,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                   Live
                 </a>
               )}
-              {project.githubUrl && project.githubUrl !== '#' && (
+              {githubUrl && githubUrl !== '#' && (
                 <a
-                  href={project.githubUrl}
+                  href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-btn text-xs"
@@ -165,7 +169,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </div>
 
           <p className="text-xs leading-relaxed" style={{ color: 'hsl(var(--foreground) / 0.75)' }}>
-            {project.description}
+            {description}
           </p>
 
           <div className="mt-auto">
@@ -173,9 +177,9 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               Technologies Used:
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {project.tags.map((tag) => (
+              {tags?.map((tech, id) => (
                 <span
-                  key={tag}
+                  key={id}
                   className="text-xs px-2 py-0.5 rounded"
                   style={{
                     background: 'hsl(var(--tag-bg))',
@@ -184,7 +188,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     fontSize: '0.7rem',
                   }}
                 >
-                  {tag}
+                  {tech}
                 </span>
               ))}
             </div>
@@ -210,8 +214,8 @@ export default function Projects() {
         </motion.div>
 
         <div className="flex flex-col gap-4">
-          {projects.map((p, i) => (
-            <ProjectCard key={i} project={p} index={i} />
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} index={index} />
           ))}
         </div>
 
