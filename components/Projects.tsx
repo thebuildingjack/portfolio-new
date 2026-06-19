@@ -28,7 +28,7 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Supabase', 'Clerk', 'shadcn/ui'],
     badge: 'AI',
     badgeColor: '#7c3aed',
-  },
+  },/* 
   {
     title: 'ChainPulse AI',
     description:
@@ -39,17 +39,18 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
     badge: 'Web3',
     badgeColor: '#9945FF',
-  },/* 
-  {
-    title: 'MVTINY – Polo Club',
-    description:
-      'Luxury streetwear brand website. Built a sleek, responsive product showcase with custom hero layout and modern animations.',
-    liveUrl: '#', // PLACEHOLDER
-    githubUrl: '#', // PLACEHOLDER
-    tags: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
-    badge: 'Client',
-    badgeColor: '#d97706',
   }, */
+  {
+    title: 'Agentic Wallet',
+    description:
+      'A real-time devnet dashboard for monitoring autonomous Solana agent wallets. Streams live on-chain transactions, tracks balance changes, and visualizes agent activity — built with Next.js, TypeScript, and Solana Web3.js.',
+    liveUrl: 'https://agentic-wallet.vercel.app/', // PLACEHOLDER
+  image: '/agentic-wallet.png',
+    githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
+    tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
+    badge: 'Web3',
+    badgeColor: '#9945FF',
+  },
   {
     title: 'KreaTON',
     description:
