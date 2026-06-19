@@ -34,6 +34,7 @@ const projects: Project[] = [
     description:
       'Full-stack Solana AI agent for the Buildifi hackathon. Monitors on-chain data and surfaces AI-generated signals via a Next.js frontend + Express API.',
     liveUrl: '#', // PLACEHOLDER
+  image: '/bazar.png',
     githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
     tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
     badge: 'Web3',
@@ -64,7 +65,8 @@ const projects: Project[] = [
   title: 'Bazar',
   description:
     'Full-stack e-commerce marketplace built as a university group project, leading a team of 6 at Bowen University. Modeled after platforms like Jumia, with multi-vendor listings, product catalogs, and order management — backed by a complete academic documentation suite.',
-  liveUrl: 'https://thestore-front.vercel.app',     // PLACEHOLDER
+  liveUrl: 'https://thestore-front.vercel.app',
+  image: '/bazar.png',
   githubUrl: 'https://github.com/thebuildingjack/store-front',   // PLACEHOLDER
   tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
   badge: 'Fullstack',
@@ -108,7 +110,9 @@ function ProjectCard({ title, description, image, liveUrl, githubUrl, tags, badg
               alt={title}
               width={600}
               height={300}
-              className="w-full h-full object-cover"
+              loading='eager'
+              priority
+              className="w-full h-full object-cover rounded-xs"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
