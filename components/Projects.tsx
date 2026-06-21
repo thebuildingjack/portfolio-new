@@ -55,6 +55,16 @@ const projects: Project[] = [
   {
     title: 'DocuAI',
     description:
+      '🚧 Currently building an AI-powered PDF analyzer with Next.js and Claude. Upload documents, generate summaries, extract key points, and chat with PDFs.',
+    liveUrl: '#', // PLACEHOLDER
+    githubUrl: 'https://github.com/thebuildingjack/docuai',
+    tags: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Supabase', 'Clerk', 'shadcn/ui'],
+    badge: 'WIP',
+    badgeColor: '#059669',
+  },/* 
+  {
+    title: 'DocuAI',
+    description:
       'AI-powered PDF analyzer built with Next.js and Claude. Upload any document to get instant summaries, key points, and an interactive Q&A chat interface.',
     liveUrl: '#', // PLACEHOLDER
     githubUrl: 'https://github.com/thebuildingjack/docuai',

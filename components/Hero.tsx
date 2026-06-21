@@ -160,7 +160,7 @@ export default function Hero() {
           <TechBadge icon="▲" label="Next.js" />.
           <br />
           <br />
-          Open to freelance. startup, adn collaboration opportunites.
+          Open to freelance, startup, and collaboration opportunites.
           {/* But wait — there&apos;s more! I&apos;m actively growing into full-stack with{' '} */}
           {/* building on{' '} <TechBadge icon="🟢" label="Node.js" /> backends with <TechBadge icon="🗄️" label="Supabase" />. */}
           {/* I also ship <TechBadge icon="🌐" label="Web3" /> products and live on the{' '}
