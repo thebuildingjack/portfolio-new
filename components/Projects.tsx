@@ -20,16 +20,6 @@ interface Project {
 // PLACEHOLDER projects — replace these with your real projects
 const projects: Project[] = [
   {
-    title: 'DocuAI',
-    description:
-      'AI-powered PDF analyzer built with Next.js and Claude. Upload any document to get instant summaries, key points, and an interactive Q&A chat interface.',
-    liveUrl: '#', // PLACEHOLDER
-    githubUrl: 'https://github.com/thebuildingjack/docuai',
-    tags: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Supabase', 'Clerk', 'shadcn/ui'],
-    badge: 'AI',
-    badgeColor: '#7c3aed',
-  },
-  {
     title: 'Bazar',
     description:
       'Full-stack e-commerce marketplace built as a university group project, leading a team of 6 at Bowen University. Modeled after platforms like Jumia, with multi-vendor listings, product catalogs, and order management — backed by a complete academic documentation suite.',
@@ -61,6 +51,16 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
     badge: 'Web3',
     badgeColor: '#9945FF',
+  },
+  {
+    title: 'DocuAI',
+    description:
+      'AI-powered PDF analyzer built with Next.js and Claude. Upload any document to get instant summaries, key points, and an interactive Q&A chat interface.',
+    liveUrl: '#', // PLACEHOLDER
+    githubUrl: 'https://github.com/thebuildingjack/docuai',
+    tags: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Supabase', 'Clerk', 'shadcn/ui'],
+    badge: 'WIP',
+    badgeColor: '#059669',
   },/* 
   {
     title: 'ChainPulse AI',
@@ -82,6 +82,7 @@ const projects: Project[] = [
     tags: ['React', 'TypeScript', 'Add', 'Your', 'Stack'],
     badge: 'WIP',
     badgeColor: '#059669',
+    badgeColor: '#7c3aed',
   }, */
 ]
 
