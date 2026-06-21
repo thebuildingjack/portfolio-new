@@ -105,7 +105,7 @@ body {
 
 @layer utilities {
   .bracket-heading {
-    @apply inline-flex items-center gap-2 font-mono text-sm font-medium tracking-wide text-muted  px-2 py-1 rounded-md dark:bg-[#252424] bg-[#e7e5e5];
+    @apply inline-flex items-center gap-2 font-mono text-sm font-medium tracking-wide text-muted  px-2 py-1 rounded-md dark:bg-[#252424] bg-[#f8f8f8];
   }
 }
 
