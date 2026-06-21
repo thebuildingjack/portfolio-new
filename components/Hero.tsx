@@ -154,7 +154,7 @@ export default function Hero() {
           style={{ color: 'hsl(var(--foreground) / 0.82)', lineHeight: '1.85' }}
         >
           {/* PLACEHOLDER: write your own bio below */}
-          <TechBadge icon="⚡" label="Frontend Engineer" /> building responsive web applications and modern user interfaces with 
+          <TechBadge icon="⚡" label="Frontend Engineer" /> building responsive web applications and polished user interfaces with 
           <TechBadge icon="⚛️" label="React" />,
           <TechBadge icon="🔷" label="TypeScript" />, and{' '}
           <TechBadge icon="▲" label="Next.js" />.
