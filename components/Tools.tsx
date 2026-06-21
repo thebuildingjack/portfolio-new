@@ -7,33 +7,35 @@ import {
   SiJavascript, SiNodedotjs, SiExpress, SiMongodb,
   SiSupabase, SiPrisma, SiDocker, SiGit, SiGithub,
   SiPostgresql, SiFirebase, SiFigma, SiVercel, SiSolana,
-  SiFramer, SiThreedotjs, SiTon
+  SiFramer, SiThreedotjs, SiTon,
+  SiShadcnui
 } from 'react-icons/si'
 import { TbBrandVscode } from 'react-icons/tb'
 
 const tools = [
   { name: 'React', Icon: SiReact, color: '#61DAFB' },
-  { name: 'Next.js', Icon: SiNextdotjs, color: '#ffffff' },
-  { name: 'Tailwind CSS', Icon: SiTailwindcss, color: '#38BDF8' },
+  { name: 'Next.js', Icon: SiNextdotjs, color: '#ffffff' }, 
   { name: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
   { name: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+  { name: 'Tailwind CSS', Icon: SiTailwindcss, color: '#38BDF8' },
+  { name: 'ShadcnUI', Icon: SiShadcnui, color: '#fff'},
+  { name: 'Framer Motion', Icon: SiFramer, color: '#0055FF' },
   { name: 'Node.js', Icon: SiNodedotjs, color: '#68A063' },
-  { name: 'Express.js', Icon: SiExpress, color: '#ffffff' },
   { name: 'MongoDB', Icon: SiMongodb, color: '#47A248' },
   { name: 'Supabase', Icon: SiSupabase, color: '#3ECF8E' },
   { name: 'Prisma', Icon: SiPrisma, color: '#2D3748' },
   { name: 'PostgreSQL', Icon: SiPostgresql, color: '#336791' },
-  { name: 'Docker', Icon: SiDocker, color: '#2496ED' },
   { name: 'Git', Icon: SiGit, color: '#F05032' },
   { name: 'GitHub', Icon: SiGithub, color: '#ffffff' },
-  /* { name: 'Firebase', Icon: SiFirebase, color: '#FFCA28' }, */
   { name: 'Figma', Icon: SiFigma, color: '#F24E1E' },
-  { name: 'Vercel', Icon: SiVercel, color: '#ffffff' },
+  { name: 'Vercel', Icon: SiVercel, color: '#ffffff' },/*
   { name: 'Solana', Icon: SiSolana, color: '#9945FF' },
   { name: 'Ton', Icon: SiTon, color: '#0055FF' },
-  { name: 'Framer Motion', Icon: SiFramer, color: '#0055FF' },
-  /* { name: 'Three.js', Icon: SiThreedotjs, color: '#ffffff' }, */
   { name: 'VS Code', Icon: TbBrandVscode, color: '#007ACC' },
+  { name: 'Express.js', Icon: SiExpress, color: '#ffffff' },
+  { name: 'Firebase', Icon: SiFirebase, color: '#FFCA28' },
+  { name: 'Three.js', Icon: SiThreedotjs, color: '#ffffff' },
+  { name: 'Docker', Icon: SiDocker, color: '#2496ED' }, */
 ]
 
 const ENTRANCE_INITIAL = { opacity: 0, scale: 0.88 }

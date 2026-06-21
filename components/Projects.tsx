@@ -28,28 +28,17 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Supabase', 'Clerk', 'shadcn/ui'],
     badge: 'AI',
     badgeColor: '#7c3aed',
-  },/* 
+  },
   {
-    title: 'ChainPulse AI',
+    title: 'Bazar',
     description:
-      'Full-stack Solana AI agent for the Buildifi hackathon. Monitors on-chain data and surfaces AI-generated signals via a Next.js frontend + Express API.',
-    liveUrl: '#', // PLACEHOLDER
-  image: '/bazar.png',
-    githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
-    tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
-    badge: 'Web3',
-    badgeColor: '#9945FF',
-  }, */
-  {
-    title: 'Agentic Wallet',
-    description:
-      'A real-time devnet dashboard for monitoring autonomous Solana agent wallets. Streams live on-chain transactions, tracks balance changes, and visualizes agent activity — built with Next.js, TypeScript, and Solana Web3.js.',
-    liveUrl: 'https://agentic-wallet.vercel.app/', // PLACEHOLDER
-  image: '/agentic-wallet.png',
-    githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
-    tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
-    badge: 'Web3',
-    badgeColor: '#9945FF',
+      'Full-stack e-commerce marketplace built as a university group project, leading a team of 6 at Bowen University. Modeled after platforms like Jumia, with multi-vendor listings, product catalogs, and order management — backed by a complete academic documentation suite.',
+    liveUrl: 'https://thestore-front.vercel.app',
+    image: '/bazar.png',
+    githubUrl: 'https://github.com/thebuildingjack/store-front',   // PLACEHOLDER
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
+    badge: 'Fullstack',
+    badgeColor: '#2563eb',
   },
   {
     title: 'KreaTON',
@@ -63,16 +52,27 @@ const projects: Project[] = [
     badgeColor: '#d97706',
   },
   {
-  title: 'Bazar',
-  description:
-    'Full-stack e-commerce marketplace built as a university group project, leading a team of 6 at Bowen University. Modeled after platforms like Jumia, with multi-vendor listings, product catalogs, and order management — backed by a complete academic documentation suite.',
-  liveUrl: 'https://thestore-front.vercel.app',
+    title: 'Agentic Wallet',
+    description:
+      'A real-time devnet dashboard for monitoring autonomous Solana agent wallets. Streams live on-chain transactions, tracks balance changes, and visualizes agent activity — built with Next.js, TypeScript, and Solana Web3.js.',
+    liveUrl: 'https://agentic-wallet.vercel.app/', // PLACEHOLDER
+  image: '/agentic-wallet.png',
+    githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
+    tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
+    badge: 'Web3',
+    badgeColor: '#9945FF',
+  },/* 
+  {
+    title: 'ChainPulse AI',
+    description:
+      'Full-stack Solana AI agent for the Buildifi hackathon. Monitors on-chain data and surfaces AI-generated signals via a Next.js frontend + Express API.',
+    liveUrl: '#', // PLACEHOLDER
   image: '/bazar.png',
-  githubUrl: 'https://github.com/thebuildingjack/store-front',   // PLACEHOLDER
-  tags: ['Next.js', 'TypeScript', 'Prisma', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
-  badge: 'Fullstack',
-  badgeColor: '#2563eb',
-}/* ,
+    githubUrl: 'https://github.com/thebuildingjack/chainpulse-ai',
+    tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
+    badge: 'Web3',
+    badgeColor: '#9945FF',
+  },
   {
     title: 'Your Next Project',
     description:

@@ -24,9 +24,9 @@ const experiences: Experience[] = [
     location: 'Remote',
     status: 'Completed',
     bullets: [
-      'Built BlockPay using Next.js and Javascript.',
-      'Collaborated with [team/clients] to deliver [outcome].',
-      'Improved [metric] by [percentage or description].',
+      'Built responsive user interfaces BlockPay using Next.js and Javascript.',
+      'Collaborated with designers and stakeholders to implement product requirements.',
+      'Improved usability and responsiveness arcoss multiple user-facing pages.',
     ],
   },
   {
@@ -36,9 +36,9 @@ const experiences: Experience[] = [
     location: 'Lagos, NG (Remote)',
     status: 'Current',
     bullets: [
-      'Built full-stack Web2 SaaS and Web3 products for clients on Upwork.',
-      'Shipped ChainPulse AI — a Solana on-chain AI agent for the Buildifi hackathon.',
-      'Building DocuAI — an AI-powered PDF analyzer with Claude-backed summaries and Q&A.',
+      'Built modern frontend interfaces for clients Saas and Web3 products using React, Next.js and TypeScript.',
+      'Delivered responsive dashboards, landing pages and user-facing features for clients',
+      'Collaborated with teams to transform product requirements into production-ready interfaces.',
     ],
   },
 ]
