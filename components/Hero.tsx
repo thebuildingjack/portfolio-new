@@ -119,16 +119,13 @@ export default function Hero() {
               @thebuildingjack {/* PLACEHOLDER: your handle */}
             </p>
 
-            <a
-              href="https://github.com/thebuildingjack/docuai"
-              target="_blank"
-              rel="noopener noreferrer"
+            <p
               className="flex items-center gap-1 text-sm w-fit hover:underline underline-offset-4 transition-all"
               style={{ color: 'hsl(var(--foreground))' }}
             >
-              Building DocuAI {/* PLACEHOLDER: your current project */}
-              <ExternalLink size={12} style={{ color: 'hsl(var(--muted))' }} />
-            </a>
+              Frontend Engineer {/* PLACEHOLDER: your current project */}
+              {/* <ExternalLink size={12} style={{ color: 'hsl(var(--muted))' }} /> */}
+            </p>
 
             <div className="flex flex-wrap items-center gap-3 text-xs mt-0.5" style={{ color: 'hsl(var(--muted))' }}>
               <span className="flex items-center gap-1">
@@ -157,13 +154,16 @@ export default function Hero() {
           style={{ color: 'hsl(var(--foreground) / 0.82)', lineHeight: '1.85' }}
         >
           {/* PLACEHOLDER: write your own bio below */}
-          Yup! I&apos;m a <TechBadge icon="⚡" label="Frontend Engineer" /> turning designs into fast, polished
-          products. But wait — there&apos;s more! I&apos;m actively growing into full-stack with{' '}
-          <TechBadge icon="🔷" label="TypeScript" />, <TechBadge icon="⚛️" label="React" />, and{' '}
-          <TechBadge icon="▲" label="Next.js" />, building on{' '}
-          <TechBadge icon="🟢" label="Node.js" /> backends with <TechBadge icon="🗄️" label="Supabase" />.
-          I also ship <TechBadge icon="🌐" label="Web3" /> products and live on the{' '}
-          <TechBadge icon="⬛" label="terminal" /> mostly.
+          <TechBadge icon="⚡" label="Frontend Engineer" /> building responsive web applications and modern user interfaces with 
+          <TechBadge icon="⚛️" label="React" />,
+          <TechBadge icon="🔷" label="TypeScript" />, and{' '}
+          <TechBadge icon="▲" label="Next.js" />.
+          <br />
+          Open to freelance. startup, adn collaboration opportunites.
+          {/* But wait — there&apos;s more! I&apos;m actively growing into full-stack with{' '} */}
+          {/* building on{' '} <TechBadge icon="🟢" label="Node.js" /> backends with <TechBadge icon="🗄️" label="Supabase" />. */}
+          {/* I also ship <TechBadge icon="🌐" label="Web3" /> products and live on the{' '}
+          <TechBadge icon="⬛" label="terminal" /> mostly. */}
         </motion.p>
 
         {/* CTA Buttons */}
