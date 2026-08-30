@@ -9,9 +9,9 @@ interface Experience {
   companyUrl?: string
   role: string
   period: string
-  location: string
+  location: string 
   status: 'Completed' | 'Current' | 'Ongoing'
-  logo?: string
+  logo?: string | {light: string, dark: string}
   bullets: string[]
 }
 
@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     period: 'Aug 2026 – Present',
     location: 'Hybrid',
     status: 'Current',
-    logo: '/altbank.png',
+    logo: { light: '/altbank_light.png', dark: '/altbank_dark.jpg' },
     bullets: [
       'Gained practical exposure to Treasury operations, including liquidity management, balance sheet management, treasury workflows, and the foreign exchange market.',
       'Explored Digital Business, gaining insight into digital products, e-commerce, and how technology, customer needs, and business objectives shape financial products',
@@ -61,6 +61,7 @@ const experiences: Experience[] = [
   },
 ]
 
+
 const statusColors: Record<string, { bg: string; dot: string; text: string }> = {
   Completed: { bg: 'hsl(142 71% 45% / 0.1)', dot: 'hsl(142 71% 45%)', text: 'hsl(142 71% 45%)' },
   Current: { bg: 'hsl(217 91% 60% / 0.1)', dot: 'hsl(217 91% 60%)', text: 'hsl(217 91% 60%)' },
@@ -83,6 +84,7 @@ export default function WorkExperience() {
 
         <div className="flex flex-col gap-4">
           {experiences.map((exp, i) => {
+            const imgTheme = exp.logo;
             const sc = statusColors[exp.status]
             return (
               <motion.div
@@ -100,20 +102,52 @@ export default function WorkExperience() {
                       {/* Company icon */}
                       <div
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 mt-0.5"
-                        style={{
+                        /* style={{
                           background: 'hsl(var(--tag-bg))',
                           border: '1px solid hsl(var(--border))',
-                        }}
+                        }} */
                       >
                         {exp.logo ? (
-                          <Image
-                          src={exp.logo}
-                          alt={`${exp.company} Logo`}
-                          width={100}
-                          height={100}
-                          className="w-full h-full object-cover rounded-sm"
-                        />) : (
-                          <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
+                          typeof exp.logo === "string" ? (
+                            <Image
+                              src={exp.logo}
+                              alt={`${exp.company} Logo`}
+                              width={100}
+                              height={100}
+                              className="w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border"
+                            />
+                          ) : (
+                            <>
+                              <Image
+                                src={exp.logo.light}
+                                alt={`${exp.company} Logo`}
+                                width={100}
+                                height={100}
+                                className="block dark:hidden w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border"
+                              />
+
+                              <Image
+                                src={exp.logo.dark}
+                                alt={`${exp.company} Logo`}
+                                width={100}
+                                height={100}
+                                className="hidden dark:block w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border"
+                              />
+                            </>
+                          )
+                        ) : (
+                          <Briefcase
+                            size={16}
+                            style={{
+                              color: "hsl(var(--muted))",
+                              background: "hsl(var(--tag-bg))",
+                              border: "1px solid hsl(var(--border))",
+                              width: "100%",
+                              height: "100%",
+                              padding: "0.6rem",
+                              borderRadius: "0.375rem",
+                            }}
+                          />
                         )}
                       </div>
 
