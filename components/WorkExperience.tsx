@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Briefcase, ExternalLink, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 interface Experience {
   company: string
@@ -17,16 +18,19 @@ interface Experience {
 // PLACEHOLDER — replace with your actual experience
 const experiences: Experience[] = [
   {
-    company: 'Ophir',
-    companyUrl: 'https://x.com/instituteophir',
-    role: 'Frontend Engineer',
-    period: 'Mar 2023 – Aug 2023',
-    location: 'Remote',
-    status: 'Completed',
+    company: 'The Alternative Bank',
+    companyUrl: 'https://altbank.ng',
+    role: 'Intern',
+    period: 'Aug 2026 – Present',
+    location: 'Hybrid',
+    status: 'Current',
+    logo: '/altbank_light.jfif',
     bullets: [
-      'Built responsive user interfaces BlockPay using Next.js and Javascript.',
-      'Collaborated with designers and stakeholders to implement product requirements.',
-      'Improved usability and responsiveness arcoss multiple user-facing pages.',
+      'Gained practical exposure to Treasury operations, including liquidity management, balance sheet management, treasury workflows, and the foreign exchange market.',
+      'Explored Digital Business, gaining insight into digital products, e-commerce, and how technology, customer needs, and business objectives shape financial products',
+      'Supported Compliance activities by assisting with the preparation and filing of Foreign Transactions Returns (FTR), including data entry, formatting, validation, and accuracy checks.',
+      'Developed a broader understanding of non-interest banking, financial services, and regulatory compliance across different areas of banking.',
+      'Learned from industry professionals and collaborated with fellow interns throughout rotational learning and team activities.',
     ],
   },
   {
@@ -34,11 +38,25 @@ const experiences: Experience[] = [
     role: 'Frontend Engineer',
     period: 'Aug 2023 – Present',
     location: 'Lagos, NG (Remote)',
-    status: 'Current',
+    status: 'Ongoing',
     bullets: [
       'Built modern frontend interfaces for clients Saas and Web3 products using React, Next.js and TypeScript.',
       'Delivered responsive dashboards, landing pages and user-facing features for clients',
       'Collaborated with teams to transform product requirements into production-ready interfaces.',
+    ],
+  },
+  {
+    company: 'Ophir',
+    companyUrl: 'https://x.com/instituteophir',
+    role: 'Frontend Engineer',
+    period: 'Mar 2023 – Aug 2023',
+    location: 'Remote',
+    status: 'Completed',
+    logo: '/ophir.jpg',
+    bullets: [
+      'Built responsive user interfaces BlockPay using Next.js and Javascript.',
+      'Collaborated with designers and stakeholders to implement product requirements.',
+      'Improved usability and responsiveness across multiple user-facing pages.',
     ],
   },
 ]
@@ -87,7 +105,16 @@ export default function WorkExperience() {
                           border: '1px solid hsl(var(--border))',
                         }}
                       >
-                        <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
+                        {exp.logo ? (
+                          <Image
+                          src={exp.logo}
+                          alt={`${exp.company} Logo`}
+                          width={100}
+                          height={100}
+                          className="w-full h-full object-cover rounded-sm p-4"
+                        />) : (
+                          <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
+                        )}
                       </div>
 
                       <div>

@@ -40,7 +40,7 @@ const projects: Project[] = [
     tags: ['Next.js', 'Tailwind CSS', 'TypeScript'],
     badge: 'Client',
     badgeColor: '#d97706',
-  },
+  },/* 
   {
     title: 'Agentic Wallet',
     description:
@@ -51,7 +51,7 @@ const projects: Project[] = [
     tags: ['Next.js', 'TypeScript', 'Solana', 'Express', 'Groq AI', 'Vercel'],
     badge: 'Web3',
     badgeColor: '#9945FF',
-  },
+  }, */
   {
     title: 'DocuAI',
     description:
