@@ -21,7 +21,7 @@ const experiences: Experience[] = [
     company: 'The Alternative Bank',
     companyUrl: 'https://altbank.ng',
     role: 'Intern',
-    period: 'Aug 2026 – Present',
+    period: 'Aug 2026',
     location: 'Hybrid',
     status: 'Current',
     logo: { light: '/altbank_light.png', dark: '/altbank_dark.jpg' },
@@ -123,7 +123,7 @@ export default function WorkExperience() {
                                 alt={`${exp.company} Logo`}
                                 width={100}
                                 height={100}
-                                className="block dark:hidden w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border"
+                                className="block w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border dark:hidden"
                               />
 
                               <Image
@@ -131,7 +131,7 @@ export default function WorkExperience() {
                                 alt={`${exp.company} Logo`}
                                 width={100}
                                 height={100}
-                                className="hidden dark:block w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border"
+                                className="hidden w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border dark:block"
                               />
                             </>
                           )

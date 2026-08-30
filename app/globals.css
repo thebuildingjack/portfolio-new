@@ -256,3 +256,16 @@ body {
     scrollbar-width: none;    /* Firefox */
   }
 }
+
+/* 
+.dark-logo {
+  display: none;
+}
+
+[data-theme="dark"] .light-logo {
+  display: none;
+}
+
+[data-theme="dark"] .dark-logo {
+  display: block;
+} */
