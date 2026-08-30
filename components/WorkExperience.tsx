@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     period: 'Aug 2026 – Present',
     location: 'Hybrid',
     status: 'Current',
-    logo: '/altbank_light.jfif',
+    logo: '/altbank.png',
     bullets: [
       'Gained practical exposure to Treasury operations, including liquidity management, balance sheet management, treasury workflows, and the foreign exchange market.',
       'Explored Digital Business, gaining insight into digital products, e-commerce, and how technology, customer needs, and business objectives shape financial products',
@@ -111,7 +111,7 @@ export default function WorkExperience() {
                           alt={`${exp.company} Logo`}
                           width={100}
                           height={100}
-                          className="w-full h-full object-cover rounded-sm p-4"
+                          className="w-full h-full object-cover rounded-sm"
                         />) : (
                           <Briefcase size={16} style={{ color: 'hsl(var(--muted))' }} />
                         )}
