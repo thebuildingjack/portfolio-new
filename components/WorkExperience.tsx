@@ -9,7 +9,7 @@ interface Experience {
   companyUrl?: string
   role: string
   period: string
-  location: string 
+  location: string
   status: 'Completed' | 'Current' | 'Ongoing'
   logo?: string | {light: string, dark: string}
   bullets: string[]
@@ -84,7 +84,6 @@ export default function WorkExperience() {
 
         <div className="flex flex-col gap-4">
           {experiences.map((exp, i) => {
-            const imgTheme = exp.logo;
             const sc = statusColors[exp.status]
             return (
               <motion.div
@@ -125,7 +124,6 @@ export default function WorkExperience() {
                                 height={100}
                                 className="block w-full h-full object-cover rounded-md border-[hsl(var(--muted))] border dark:hidden"
                               />
-
                               <Image
                                 src={exp.logo.dark}
                                 alt={`${exp.company} Logo`}

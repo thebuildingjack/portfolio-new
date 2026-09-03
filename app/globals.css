@@ -261,11 +261,13 @@ body {
 .dark-logo {
   display: none;
 }
-
-[data-theme="dark"] .light-logo {
+*/
+/* [data-theme="dark"] .light-logo {
   display: none;
 }
 
 [data-theme="dark"] .dark-logo {
   display: block;
-} */
+}  */
+
+@custom-variant dark (&:where(.dark, .dark *));
