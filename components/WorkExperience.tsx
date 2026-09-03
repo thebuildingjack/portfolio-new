@@ -22,7 +22,7 @@ const experiences: Experience[] = [
     companyUrl: 'https://altbank.ng',
     role: 'Intern',
     period: 'Aug 2026',
-    location: 'Hybrid',
+    location: 'Lagos, NG (Hybrid)',
     status: 'Current',
     logo: { light: '/altbank_light.png', dark: '/altbank_dark.jpg' },
     bullets: [
