@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Navbar */}
      {/*  <Navbar /> */}
-      <FloatingNav className='justify-center'/>
+      <FloatingNav />
 
       {/* Sections */}
       <div className="flex flex-col items-center justify-center gap-10 w-full relative z-10 pad max-w-3xl">
