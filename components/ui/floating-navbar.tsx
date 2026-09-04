@@ -25,40 +25,40 @@ const navItems = [
   {
     name: "Home",
     link: "#hero",
-    icon: <Home size={15} />,
+    icon: <Home size={17} />,
   },
   {
     name: "Projects",
     link: "#projects",
-    icon: <FolderOpen size={15} />,
+    icon: <FolderOpen size={17} />,
   },
   {
     name: "Experience",
     link: "#experience",
-    icon: <Briefcase size={15} />,
+    icon: <Briefcase size={17} />,
   },
   {
     name: "GitHub",
     link: "https://github.com/thebuildingjack",
-    icon: <SiGithub size={15} />,
+    icon: <SiGithub size={17} />,
     external: true,
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/francis-authority-1190a81b0",
-    icon: <FaLinkedinIn size={15} />,
+    icon: <FaLinkedinIn size={17} />,
     external: true,
   },
   {
     name: "X",
     link: "https://x.com/thebuildingjack",
-    icon: <SiX size={15} />,
+    icon: <SiX size={17} />,
     external: true,
   },
   {
     name: "Email",
     link: "mailto:francis.i.authority@gmail.com",
-    icon: <Mail size={15} />,
+    icon: <Mail size={17} />,
   },
 ];
 
