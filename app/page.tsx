@@ -8,6 +8,7 @@ import Projects from '@/components/Projects'
 import Thoughts from '@/components/Thoughts'
 import Connect from '@/components/Connect'
 import Footer from '@/components/Footer'
+import { FloatingNav } from '@/components/ui/floating-navbar'
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
       <StarBackground />
 
       {/* Navbar */}
-      <Navbar />
+     {/*  <Navbar /> */}
+      <FloatingNav className='justify-center'/>
 
       {/* Sections */}
       <div className="flex flex-col items-center justify-center gap-10 w-full relative z-10 pad max-w-3xl">
